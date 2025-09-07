@@ -68,6 +68,10 @@ footer img {
   overflow: hidden;
 }
 
+main{
+  min-height:70vh;
+}
+
 /* Estilos para pantallas más chicas (como celulares) */
 @media (max-width: 600px) {
   .menu__escudos img {
