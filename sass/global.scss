@@ -1,0 +1,84 @@
+@use 'variables' as v;
+
+body {
+    background-color: v.$color_lb;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+main{
+  min-height:70vh;
+}
+
+footer {
+    text-align: center;
+    background-color: azure;
+    padding: 1rem;
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+    }
+}
+
+.menu__escudos {
+    img {
+        width: 50px;
+    }
+}
+
+.botonera {
+    width: 100%;
+
+    .container-fluid {
+        width: auto !important;
+    }
+}
+
+.box-model {
+    width: 200px;
+    background-color: lightgray;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 30px;
+    font-size: small;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: v.$color_lb;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-container {
+    max-width: 1080px;
+    overflow: hidden;
+}
+
+/* Estilos para pantallas más chicas (como celulares) */
+@media (max-width: 600px) {
+    .carousel-item {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #carouselExampleIndicators {
+        max-width: 100%;
+        width: 90vw;
+    }
+}

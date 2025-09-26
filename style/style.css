@@ -3,14 +3,30 @@ body {
   background-color: lightblue;
 }
 
-.menu__escudos img {
-  width: 50px;
-}
-
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  text-align: center;
+  background-color: azure;
+  padding: 1rem;
+}
+footer img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.menu__escudos img {
+  width: 50px;
 }
 
 .botonera {
@@ -42,42 +58,13 @@ header {
   text-align: center;
 }
 
-footer {
-  text-align: center;
-  background-color: azure;
-}
-footer img {
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-}
-
-.estadisticas {
-  text-align: center;
-  padding: 10px;
-  background-color: azure;
-}
-
-.estadios {
-  background-color: lightblue;
-  text-align: center;
-}
-
 .carousel-container {
   max-width: 1080px;
   overflow: hidden;
 }
 
-main{
-  min-height:70vh;
-}
-
 /* Estilos para pantallas más chicas (como celulares) */
 @media (max-width: 600px) {
-  .menu__escudos img {
-    display: flex;
-    width: 150px;
-  }
   .carousel-item img {
     width: 100%;
     height: auto;
@@ -86,6 +73,28 @@ main{
     max-width: 100%;
     width: 90vw;
   }
+}
+.menu__escudos img {
+  width: 50px;
+}
+
+/* Estilos para pantallas más chicas (como celulares) */
+@media (max-width: 600px) {
+  .menu__escudos img {
+    display: flex;
+    width: 150px;
+  }
+}
+.estadios {
+  padding: 3em;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.estadisticas {
+  text-align: center;
+  padding: 10px;
+  background-color: azure;
 }
 
 /*# sourceMappingURL=style.css.map */

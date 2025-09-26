@@ -1,0 +1,15 @@
+.menu__escudos {
+    img {
+        width: 50px;
+    }
+}
+
+/* Estilos para pantallas más chicas (como celulares) */
+@media (max-width: 600px) {
+    .menu__escudos {
+        img {
+            display: flex;
+            width: 150px;
+        }
+    }
+}
